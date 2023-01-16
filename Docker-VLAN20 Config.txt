@@ -1,0 +1,5 @@
+ip addr add 20.20.20.20/24 dev eth0 || true
+ip route add default via 20.20.20.1 || true
+cat > /etc/resolv.conf << EOF
+nameserver 1.1.1.1
+EOF
